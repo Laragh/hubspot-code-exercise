@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import './nav.scss'
 import { Link } from 'react-router-dom';
 
@@ -7,8 +6,7 @@ export default class Nav extends Component {
 
     render() {
         return (<div className="HeadingGrid">
-            Exercise 2 Testimonial Block
-        <ul className="Nav__Ul"><li className="  Nav__Li">
+            <ul className="Nav__Ul"><li className="  Nav__Li">
                 <Link to="/">
                     Home
                     </Link>

@@ -9,10 +9,8 @@ import Testimonial from './partials/testimonial/testimonial.component';
 import Nav from './partials/nav/nav.component'
 
 const newHistory = createBrowserHistory();
-// Import routing components
+
 import { Router, Route } from 'react-router';
-// import MoviesFilters from './partials/movies-filters/movies-filters.component';
-// import FilterDropdown from './partials/movies-filters/filter.component';
 
 ReactDOM.render(
     <div className="Body">

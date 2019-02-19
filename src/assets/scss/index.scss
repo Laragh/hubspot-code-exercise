@@ -67,7 +67,8 @@ body {
     // padding: 30px 20px;
     border: 1px solid #eee;
     margin-top: 50px;
-    padding-bottom:50px;
+    // padding-bottom:50px;
+    margin-bottom: 50px;
 }
 
 .Dropdown_Select {
@@ -89,7 +90,7 @@ body {
 }
 .Dropdown {
     position: absolute;
-    z-index: 1;
+    z-index: 4;
     top: 100%;
     right: 0;
     left: 0;

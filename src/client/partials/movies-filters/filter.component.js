@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import './movies-filters.scss';
 
 
 export default class FilterDropdown extends Component {
 
     render() {
-        console.log(this.props.filters.types)
         const active = this.props.filter ? this.props.filter.active : null;
 
         return (
@@ -19,7 +17,7 @@ export default class FilterDropdown extends Component {
                         this.props.filters.types.map((item, i) => {
                             return <li key={i}><label className="checkbox-container">
 
-                                <input type="checkbox" />
+                                <input type="checkbox" value={item.name} checked={item.checked} onChange={() => { this.props.checkboxHandler(item) }} />
                                 <span className="checkmark"></span>
                                 {item.name}
                             </label>

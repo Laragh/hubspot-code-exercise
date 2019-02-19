@@ -1,21 +1,55 @@
-export const filterGenres = {
-    types: [
-        {
+export const filterGenresList = {
+    movies: {
+        types: [
+            {
+                name:
+                    'action',
+                checked: false
+            },
+            {
+                name:
+                    'adventure',
+                checked: false
+            },
+            {
+                name:
+                    'animation',
+                checked: false
+            },
+            {
+                name:
+                    'comedy',
+                checked: false
+            },
+        ],
+        active: false
+    },
+    books: {
+        types: [{
             name:
-                'action'
+                'crime',
+            checked: false
         },
         {
             name:
-                'adventure'
+                'mystery',
+            checked: false
         },
         {
             name:
-                'animation',
+                'thriller',
+            checked: false
         },
         {
             name:
-                'comedy'
+                'sci-fi',
+            checked: false
         },
-    ],
-    active: false
+        {
+            name:
+                'fantasy',
+            checked: false
+        }
+        ]
+    }
 }
