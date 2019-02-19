@@ -1,0 +1,15 @@
+$montserrat: 'Montserrat';
+$roboto: 'Roboto+Slab';
+$blue: #00A2E0;
+$orange: #FE6C00;
+
+@mixin CE__Button {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 12px;
+
+    justify-content: center;
+    cursor: pointer;
+}

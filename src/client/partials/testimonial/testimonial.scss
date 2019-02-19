@@ -1,0 +1,194 @@
+// @import 'variables.scss';
+@import '../../../assets/scss/variables.scss';
+
+.Testimonial {
+    &__Grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        // margin: 50px 0 50px 0;
+    }
+
+    &__Row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #F9F8F7;
+        padding: 20px 10px;
+
+        justify-content: center;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        // @media screen and (min-width:768px) {
+        //     width: 80%;
+        // }
+    }
+
+    &__TextColumn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        // border-left: 2px solid $orange;
+        padding: 30px 0 0 15px;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width:768px) {
+            width: 40%;
+        }
+    }
+
+    &__Image {
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 20px;
+    }
+
+    &--circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 44px;
+        background: $orange;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        &--small {
+            width: 18px;
+            height: 18px;
+            border-radius: 18px;
+            background: $orange;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    &__Quotes {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        height: 34px;
+
+
+
+        &--text {
+            font-family: $roboto;
+            display: flex;
+            flex-wrap: nowrap;
+
+            blockquote {
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 58px;
+                margin-top: 23px;
+            }
+
+            blockquote ::before {
+                content: '\201C';
+            }
+
+            // blockquote ::after {
+            //     content: '\201C';
+            // }
+        }
+    }
+
+    &__ImageEnd {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: 24px;
+    }
+
+    &__LineContainer {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__Line {
+        width: 2px;
+        /* Line width */
+        background-color: $orange;
+        /* Line color */
+        height: 96%;
+        /* Override in-line if you want specific height. */
+        display: flex;
+        margin-top: 26px
+    }
+
+    &__ButtonColumn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width:768px) {
+            width: 20%;
+            min-width: 240px
+        }
+    }
+
+    &__Button {
+        @include CE__Button;
+        width: 200px;
+        color: #fff;
+        font-weight: 400;
+        background-image: linear-gradient($blue, darken($blue, 5%));
+        transition: background-image .4s ease;
+
+        &:hover {
+            background-image: linear-gradient($blue, darken($blue, 6%));
+            transition: background-image .4s ease;
+        }
+
+        &:not(:hover) {
+            background-image: linear-gradient($blue, darken($blue, 5%));
+            transition: background-image .4s ease;
+        }
+    }
+
+    &__Author {
+        font-family: $montserrat;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+}

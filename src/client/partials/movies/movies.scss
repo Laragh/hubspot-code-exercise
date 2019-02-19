@@ -1,0 +1,13 @@
+@import '../../../assets/scss/variables.scss';
+
+.Movies {
+    &__Container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
