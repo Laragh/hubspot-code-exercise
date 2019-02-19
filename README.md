@@ -1,12 +1,5 @@
 # HubSpot Web Team Exercise - Instructions
 
-##Candidate Note:
-
-### Exercise was initially provided at https://github.com/HubSpotWebTeam/CodeExercise, unfortunately project couldn't be npm installed or run and proved problematic to update within a short time frame. So it was rebuilt in React. In terms of reusable code, no third party css libraries, scss preprocessor, Webpack dev/prod builds and filter requirements it meets below requirements.
-
-###Exception to not removing / adding elements due to time constraint and loss of time on legacy project.
-
-
 ## Setup
 
 1. Clone or download this repository (do not fork it).
@@ -170,7 +163,7 @@ In the production mode, we will have only 1 server running. All the client side 
 
 ```bash
 # Clone the repository
-git clone https://github.com/crsandeep/simple-react-full-stack
+git clone https://github.com/Laragh/hubspot-code-exercise.git
 
 # Go inside the directory
 cd simple-react-full-stack
