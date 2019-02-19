@@ -11,6 +11,7 @@
         // margin: 50px 0 50px 0;
         min-height: 50vh;
         background: #F9F8F7;
+        width: 100%;
     }
 
     &__Row {
@@ -21,6 +22,7 @@
         padding: 20px 10px;
 
         justify-content: center;
+        width: 100%;
 
         @media screen and (max-width: 767px) {
             width: 100%;

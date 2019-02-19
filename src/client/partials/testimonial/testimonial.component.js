@@ -15,7 +15,7 @@ disrupt kinfolk goth +1.`
     makeRandomCall() {
         console.log('call')
 
-        axios.get('http://api.icndb.com/jokes/random?firstName=John&amp;lastName=Doe')
+        axios.get('//api.icndb.com/jokes/random?firstName=John&amp;lastName=Doe')
             .then(response => {
                 this.text = response.data.value.joke;
                 this.setState({
